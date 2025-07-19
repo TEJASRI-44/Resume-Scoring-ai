@@ -1,6 +1,10 @@
 # 🤖 Resume Screening AI Bot
 
-A simple and intelligent AI-powered Resume Screening App built with **Streamlit**. It automatically extracts important details like **email**, **phone number**, **location**, and matches resumes to a given **job description**. You can also **download results in Excel format**.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-ff4b4b)
+
+An intelligent AI-powered Resume Screening App built with **Streamlit**. It automatically extracts key information like **email**, **phone number**, and **location**, and matches resumes against a **Job Description (JD)**. You can also **download the results in Excel format**.
 
 ---
 
@@ -25,19 +29,19 @@ A simple and intelligent AI-powered Resume Screening App built with **Streamlit*
   - Email
   - Phone Number
   - Location
-  - Matching Score 🔍
-- View results in tabular format 📊
-- Download table as `.xlsx` Excel file 📥
-- Refresh the app with one click 🔄
+  - Match Score 🔍
+- View results in a table 📊
+- Download as `.xlsx` Excel file 📥
+- One-click refresh 🔄
 
 ---
 
 ## 🧠 Tech Stack
 
-- **Frontend/UI**: Streamlit
+- **Frontend**: Streamlit
 - **Backend**: Python
-- **PDF Parsing**: PyMuPDF (fitz)
-- **Excel Handling**: Pandas + Openpyxl
+- **PDF Parsing**: PyMuPDF (`fitz`)
+- **Excel Handling**: Pandas, Openpyxl
 
 ---
 
@@ -45,21 +49,20 @@ A simple and intelligent AI-powered Resume Screening App built with **Streamlit*
 
 | Library | Purpose |
 |--------|---------|
-| `streamlit` | Web interface banane ke liye |
-| `pandas` | Data ko table me store karne aur Excel file banane ke liye |
-| `fitz` (PyMuPDF) | Resume (PDF) ka text extract karne ke liye |
-| `re` | Regular expressions se email, phone aur location nikalne ke liye |
-| `difflib` | JD aur resume ka match score nikalne ke liye |
-| `base64` | Excel download button create karne ke liye |
-| `io` | Excel file memory me generate karne ke liye |
-| `openpyxl` | Excel file ko properly save/export karne ke liye |
+| `streamlit` | Web interface |
+| `pandas` | Data handling and Excel export |
+| `fitz` (PyMuPDF) | Extract text from PDFs |
+| `re` | Extract emails, phone numbers, locations |
+| `difflib` | Compute match scores |
+| `base64` | Download button for Excel |
+| `io` | In-memory file handling |
+| `openpyxl` | Save Excel file properly |
 
 ---
 
 ## 🧪 How to Run Locally
 
 1. **Clone the repository**
-
-```bash
-[[git clone https://github.com/DevWaqarAhmad/Resume-Screening-Bot.git]
-cd resume-screening-ai-bot
+   ```bash
+   git clone https://github.com/DevWaqarAhmad/Resume-Screening-Bot.git
+   cd Resume-Screening-Bot
