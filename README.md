@@ -49,5 +49,5 @@ A simple and intelligent AI-powered Resume Screening App built with **Streamlit*
 1. **Clone the repository**
 
 ```bash
-[[git clone https://github.com/YourUsername/resume-screening-ai-bot.git]
+[[git clone https://github.com/DevWaqarAhmad/Resume-Screening-Bot.git]
 cd resume-screening-ai-bot
