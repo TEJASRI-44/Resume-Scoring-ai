@@ -4,6 +4,18 @@ A simple and intelligent AI-powered Resume Screening App built with **Streamlit*
 
 ---
 
+## 📸 Demo Screenshots
+
+| Home Page | Prediction Page |
+|-----------|-----------------|
+| ![Home Page](images/1.png) | ![Prediction Page](images/2.png) |
+
+| Uploaded Resume | Excel Download |
+|------------------|----------------|
+| ![Uploaded File](images/3.png) | ![Excel Output](images/4.png) |
+
+---
+
 ## 🚀 Features
 
 - Upload multiple PDF resumes 📂
