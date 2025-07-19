@@ -1,10 +1,9 @@
 import streamlit as st
 import pandas as pd
 import io
-
 from utils.file_handler import extract_text_from_pdf
 from utils.similarity_checker import calculate_similarity_score
-from utils.metadata_extractor import extract_email_phone_location  # <-- New custom function
+from utils.metadata_extractor import extract_email_phone_location  
 
 st.set_page_config(page_title="Resume Screening Bot", layout="centered")
 
@@ -41,7 +40,6 @@ if jd_input and resume_files:
     df_results = pd.DataFrame(results)
     st.table(df_results)
 
-    # --- Download Button ---
     output = io.BytesIO()
     with pd.ExcelWriter(output, engine='openpyxl') as writer:
         df_results.to_excel(writer, index=False, sheet_name='Results')
@@ -58,3 +56,5 @@ elif jd_input and not resume_files:
     st.info("Upload at least one resume PDF.")
 elif resume_files and not jd_input:
     st.info("Paste the job description above.")
+
+
